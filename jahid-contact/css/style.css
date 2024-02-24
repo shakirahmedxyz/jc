@@ -1,0 +1,111 @@
+body{
+    font-family: custom;
+}
+#form{
+    background: #212141;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+#form h2{
+    font-size: 80px;
+}
+#form p{}
+form{
+    padding: 25px 0;
+    background: #151560;
+}
+.form_row{}
+.form_row input{
+    width: 30%;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    padding: 7px;
+    border-radius: 8px;
+}
+.form_row input[type="checkbox"]{width: inherit;margin-right: 0;}
+.form_row input[type="reset"]{
+    width: inherit;
+    padding: 7px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.form_row h4{}
+.form_row label{
+}
+.form_row select{
+    margin-bottom: 20px;
+    width: 33%;
+    padding: 7px;
+}
+.form_row textarea{
+    margin-bottom: 15px;
+}
+.form_row button{
+    background: #5757d2;
+    padding: 7px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+}
+.form_row input[type="reset"]:hover{background: red; color:#fff;padding: 10px 25px; font-size: 25px; transition: .5s;}
+.form_row button:hover{background: red;transition: 500ms;}
+
+
+/*Font Face*/
+@font-face {
+    font-family: 'custom';
+    src: url('../webfonts/chantelli_antiqua-webfont.woff2') format('woff2'),
+         url('../webfonts/chantelli_antiqua-webfont.woff') format('woff'), url('../webfonts/Chantelli_Antiqua.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Menu style*/
+
+header{
+    background: #1c146c;
+}
+nav{}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 0;
+    border-right: 1px solid #080522;
+    position: relative;
+    z-index: 10;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 10px;
+    color: #fff;
+}
+nav ul li a:hover{}
+
+/*dropdown*/
+nav ul li ul{
+    position: absolute;
+    background: red;
+    display: none;
+    min-width: 150px;
+    top: 43px;
+}
+nav ul li:hover>ul{display: block;}
+nav ul li ul li{
+    display: block;
+    text-align: left;
+    border-bottom: 1px dotted #fff;
+    padding: 0;
+}
+nav ul li ul li a{
+    display: block;
+    padding: 5px;
+}
+nav ul li ul li a:hover{background: darkred; color:#fff}
